@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: mongo-pvc-hostpath    #changed name
+spec:
+  resources:
+    requests:
+      storage: 1Gi   #updated storage
+  storageClassName: localstorage   #added class
+  accessModes:
+  - ReadWriteOnce
+  
