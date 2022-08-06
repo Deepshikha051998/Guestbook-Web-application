@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: guestbookfrontend
   labels:
-    app.kubernetes.io/name: guestbookfrontend
+    app.kubernetes.io/name: guestbookfrontend #changed the name
     app.kubernetes.io/component: frontend
 spec:
   selector:
