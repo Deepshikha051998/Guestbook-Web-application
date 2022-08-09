@@ -1,6 +1,7 @@
 apiVersion: v1
 kind: PersistentVolume
 metadata:
+<<<<<<< HEAD
   name: mongo-pv1-hostpath
 spec:
   capacity: 
@@ -9,5 +10,16 @@ spec:
     - ReadWriteOnce
   persistentVolumeReclaimPolicy: Retain
   storageClassName: localstorage
+=======
+  name: mongodb-pv-hostpath
+spec:
+  capacity: 
+    storage: 4Gi  # 4Gi storage
+  accessModes:
+    - ReadWriteOnce
+    #added storage class
+  storageClassName: localstorage
+  persistentVolumeReclaimPolicy: Retain
+>>>>>>> staging
   hostPath:
     path: /tmp/mongodb

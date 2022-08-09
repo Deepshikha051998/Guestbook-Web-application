@@ -28,4 +28,8 @@ spec:
         - name: GET_HOSTS_FROM
           value: dns
         ports:
+<<<<<<< HEAD
         - containerPort: 80
+=======
+        - containerPort: 80
+>>>>>>> staging
